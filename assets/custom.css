@@ -1,0 +1,26 @@
+/* Custom Font Styling */
+
+/* Menggunakan Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700&display=swap');
+
+/* Mengubah font body (paragraf, teks normal) */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Mengubah font heading (h1, h2, h3, dst) */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Mengubah font site title */
+.site-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+}
+
+/* Opsional: Ubah ukuran dan warna */
+body {
+  font-size: 16px;
+  line-height: 1.6;
+}

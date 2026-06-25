@@ -1,0 +1,168 @@
+---
+layout: post
+title: "e-Rapor SD Versi 2025.1 — Apa yang Baru dan Cara Downloadnya"
+date: 2026-06-24 07:00:00 +0700
+categories: administrasi,erapor,rapor
+tags: erapor,rapor-sd,kemendikdasmen,dapodik,kurikulum-merdeka
+author: "Aplikasi Pendidikan"
+---
+
+Setiap menjelang semester baru, satu hal yang hampir pasti bikin kepala pusing adalah urusan rapor.
+Sebagai operator sekolah, saya tahu betul rasanya bongkar-pasang data, koordinasi dengan guru kelas,
+sampai kejar-kejaran deadline cetak rapor. Nah, kabar baiknya — Kemendikdasmen sudah resmi merilis
+**e-Rapor SD versi 2025.1**, dan versi ini membawa banyak pembaruan yang cukup signifikan dibanding sebelumnya.
+
+Di artikel ini saya akan coba jelaskan secara sederhana: apa itu e-Rapor SD, apa saja yang baru di versi 2025.1,
+siapa yang mengerjakan apa, spesifikasi minimal komputer server, dan tentu saja — link downloadnya.
+
+---
+
+## Apa Itu e-Rapor SD?
+
+e-Rapor SD adalah aplikasi berbasis web yang dikembangkan oleh **Direktorat Sekolah Dasar, Kemendikdasmen**,
+untuk mengelola penilaian dan laporan capaian kompetensi peserta didik (rapor) secara digital.
+
+Singkatnya, aplikasi ini menggantikan proses input nilai manual yang selama ini sering dilakukan di Excel
+atau aplikasi seadanya. Dengan e-Rapor, semua proses mulai dari input nilai, pengolahan, hingga cetak rapor
+dilakukan dalam satu sistem yang terhubung langsung ke **Dapodik**.
+
+Yang perlu digarisbawahi: aplikasi ini **gratis**, bisa digunakan oleh seluruh SD di Indonesia, dan mendukung
+baik **Kurikulum Merdeka** maupun **Kurikulum 2013**.
+
+---
+
+## Yang Baru di Versi 2025.1
+
+Versi 2025.1 bukan sekadar update kecil. Ini adalah hasil **pengembangan ulang** dengan framework dan database
+yang diperbarui total. Berikut pembaruan utamanya:
+
+### Untuk Kurikulum 2013 (mulai TA 2025/2026 Ganjil)
+
+- **Fitur Nilai Profil Lulusan** — penilaian sikap kini mengacu pada Profil Lulusan, menggantikan format lama.
+- **Deskripsi Sikap berbasis Profil Lulusan** — deskripsi otomatis menyesuaikan dengan kebijakan terbaru.
+- Perbaikan fitur Nilai P3 dan Deskripsi Sikap untuk data sebelum TA 2025/2026 Ganjil.
+
+### Untuk Kurikulum Merdeka
+
+- **Fitur Penilaian Kokurikuler** — hadir sebagai pengganti/pendamping P5, sesuai Panduan Pembelajaran
+  dan Asesmen 2025.
+- Fitur P5 (Projek Penguatan Profil Pelajar Pancasila) dinonaktifkan dan diperbaiki sistem pengelolaannya.
+
+### Fitur Tambahan Lainnya
+
+- **Transkrip Nilai Ijazah** — aktif mulai TA 2024/2025, bisa dicetak di semester genap.
+- **Upload Foto Siswa Massal** — hemat waktu dibanding upload satu per satu.
+- Tampilan antarmuka diperbarui secara menyeluruh, lebih bersih dan responsif.
+- Perbaikan sistem dan bug fix pada berbagai fitur sebelumnya.
+
+---
+
+## Siapa Mengerjakan Apa?
+
+Supaya tidak bingung saat pembagian tugas, berikut pembagian peran di dalam aplikasi:
+
+| Peran | Tugas Utama |
+|---|---|
+| **Operator Dapodik** | Input data master (siswa, PTK, rombel, ekskul) dan buat Web Service di Dapodik |
+| **Administrator e-Rapor** | Setting Web Service, ambil data Dapodik, kelola user, mapping rapor, logo, tanda tangan, foto siswa, cetak & kirim nilai ke Dapodik |
+| **Guru Mapel / Guru Kelas** | Input Tujuan Pembelajaran, nilai rapor, nilai Profil Lulusan, nilai Kokurikuler/P5, nilai ekskul |
+| **Wali Kelas** | Update data siswa, input kehadiran, nilai ekskul (jika belum diisi pembina), kenaikan kelas, deskripsi sikap |
+
+> **Catatan operator:** Pastikan data di Dapodik sudah bersih sebelum menarik ke e-Rapor.
+> Data rombel, pembelajaran, dan ekskul yang belum lengkap di Dapodik akan memengaruhi tampilan di e-Rapor.
+
+---
+
+## Spesifikasi Minimum Komputer Server
+
+e-Rapor SD berjalan di jaringan **Local Area Network (LAN)** sekolah. Artinya, butuh satu komputer
+yang difungsikan sebagai server, lalu guru-guru lain bisa mengakses lewat browser masing-masing.
+
+Spesifikasi minimum server yang direkomendasikan:
+
+- **Processor:** Intel Core i3 atau setara (ke atas)
+- **Browser:** Chrome atau Mozilla Firefox versi terbaru (tanpa plugin tambahan)
+- **Resolusi layar:** Minimal 1024 px untuk tampilan optimal
+
+> **Tips:** Usahakan laptop yang dipakai sebagai server e-Rapor adalah laptop yang sama dengan tempat
+> Dapodik terinstal. Ini mempermudah proses sinkronisasi data.
+
+### Bisa Digunakan Offline
+
+Satu hal yang sering ditanyakan: apakah harus selalu online? **Tidak.** e-Rapor SD bisa digunakan
+secara **offline** (tanpa koneksi internet). Koneksi internet hanya dibutuhkan saat sinkronisasi data
+dengan Dapodik atau saat pengiriman nilai ke server pusat.
+
+---
+
+## Instalasi Baru vs Update — Wajib Dibedakan!
+
+Ini bagian yang **paling penting** dan sering jadi sumber masalah:
+
+### Jika Belum Pernah Instal e-Rapor Versi 2025
+
+Gunakan file **Installer_eRaporSD 2025.1 X64 Rilis.exe**. Jalankan sebagai administrator, ikuti wizard
+hingga selesai, lalu isi form pendataan pengguna yang muncul otomatis.
+
+### Jika Sudah Pernah Instal e-Rapor Versi 2025
+
+**Jangan instal ulang!** Gunakan file **Updater** yang tersedia di folder yang sama.
+Kalau Anda memaksakan instal ulang tanpa proses update, seluruh data rapor sebelumnya akan
+**terhapus permanen dan tidak bisa dikembalikan**.
+
+Setelah update selesai, jika tampilan belum berubah — bersihkan cookies dan cache browser Anda.
+
+---
+
+## Alur Kerja e-Rapor SD Secara Singkat
+
+Supaya lebih mudah dibayangkan, begini alur umum penggunaan e-Rapor di sekolah:
+
+```
+Dapodik (data siswa, PTK, rombel)
+        ↓
+Administrator ambil data via Web Service
+        ↓
+Guru input Tujuan Pembelajaran & Nilai
+        ↓
+Wali Kelas lengkapi data (kehadiran, deskripsi sikap)
+        ↓
+Administrator cetak rapor & kirim nilai ke Dapodik
+        ↓
+Data tersinkron ke server pusat Kemendikdasmen
+```
+
+---
+
+## Link Download Resmi e-Rapor SD 2025.1
+
+Berikut link resmi yang disediakan oleh **Direktorat Sekolah Dasar Kemendikdasmen**:
+
+> 🔗 **[Download Disini](https://drive.google.com/drive/folders/1RkwABW0RaE5e200-1X6-6ZnJrnFsbJOG)**
+
+Link tersebut akan mengarahkan ke folder **Google Drive resmi** yang berisi:
+
+- File Installer e-Rapor SD 2025.1 (untuk sekolah baru)
+- File Updater e-Rapor SD 2025.1 (untuk sekolah yang sudah pakai versi 2025)
+- Buku Panduan Penggunaan e-Rapor SD lengkap
+
+Jika link utama mengalami kendala saat diakses, klik dokumen berjudul **"Link Download Alternatif"**
+yang tersedia di dalam folder Google Drive tersebut.
+
+---
+
+## Penutup
+
+Sebagai operator sekolah, saya melihat e-Rapor SD versi 2025.1 ini sebagai langkah maju yang nyata.
+Fitur upload foto massal, integrasi kokurikuler, hingga transkrip nilai ijazah — semuanya menjawab
+kebutuhan nyata di lapangan yang selama ini dikerjakan secara manual.
+
+Yang terpenting: **jangan terburu-buru instal ulang kalau sudah pakai versi 2025**. Baca dulu buku panduan,
+pastikan data Dapodik bersih, dan ikuti prosedur update yang benar. Dengan begitu, proses pengerjaan
+rapor di akhir semester akan jauh lebih lancar.
+
+Semoga bermanfaat, dan selamat mengerjakan rapor! 💪
+
+---
+
+*Referensi: Direktorat Sekolah Dasar Kemendikdasmen — [ditsd.kemendikdasmen.go.id](https://ditsd.kemendikdasmen.go.id)*

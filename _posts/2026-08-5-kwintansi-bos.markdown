@@ -46,7 +46,7 @@ Aplikasi ini memadukan **Go (Golang)** pada sistem *backend* untuk pemrosesan da
 
 Sudah tidak sabar ingin mencoba KwitansiBOS dan mempercepat urusan pembuatan kwitansi BOS? Klik tautan unduhan di bawah ini:
 
-👉 **[Download KwitansiBOS di sini](https://mega.nz/file/cc5BECrA#xfWgbW6Fre7hISk7_HTUoJmRsFXjY7b8dZ_nad5Iylw)**
+👉 **[Download KwitansiBOS di sini](https://mega.nz/file/4Rwm0aYS#K-wu9FpUv04nIx8yXW1v4_6S_2A4hM9E2Al1EZrdXRU)**
 
 ---
 
